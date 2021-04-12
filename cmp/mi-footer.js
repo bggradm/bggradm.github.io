@@ -4,7 +4,7 @@ class MiFooter
     this.innerHTML = /* html */
       `<p>
         &copy; 2021
-        Gonzalez Rosales Briant Gustavo.
+        Gonzalez Rosales Briant Gustavo
       </p>`;
   }
 }
