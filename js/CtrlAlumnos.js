@@ -70,6 +70,7 @@ function htmlFila(doc) {
   const nombre = cod(data.nombre);
   const telefono = cod(data.telefono);
   const grupo = cod(data.grupo);
+  const fecha = cod(data.fecha);
   const parámetros =
     new URLSearchParams();
   parámetros.append("id", doc.id);

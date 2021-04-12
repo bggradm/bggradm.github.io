@@ -55,6 +55,7 @@ async function busca() {
         data.nombre || "";
       forma.telefono.value = data.telefono;
       forma.grupo.value = data.grupo;
+      forma.fecha.value = data.fecha;
       forma.addEventListener(
         "submit", guarda);
       forma.eliminar.
@@ -84,6 +85,8 @@ async function guarda(evt) {
      formData, "telefono").trim();
     const grupo = getString(
     formData, "grupo").trim();
+    const fecha = getString(
+      formData, "fecha").trim();
 
     /**
      * @type {
@@ -93,7 +96,8 @@ async function guarda(evt) {
       matricula, 
       nombre,
       telefono,
-      grupo
+      grupo,
+      fecha
     };
     await daoAlumno.
       doc(id).

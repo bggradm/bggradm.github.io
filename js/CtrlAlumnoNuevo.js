@@ -46,6 +46,9 @@ async function guarda(evt) {
       formData, "telefono").trim();
       const grupo = getString(
       formData, "grupo").trim();
+      const fecha = getString(
+        formData, "fecha").trim();
+
     /**
      * @type {
         import("./tipos.js").
@@ -54,7 +57,8 @@ async function guarda(evt) {
       matricula,
       nombre,
       telefono,
-      grupo
+      grupo,
+      fecha
     };
     await daoAlumno.
       add(modelo);
