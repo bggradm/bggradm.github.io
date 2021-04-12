@@ -68,7 +68,7 @@ function htmlFila(doc) {
   const data = doc.data();
   const matricula = cod(data.matricula);
   const nombre = cod(data.nombre);
-  const nombre = cod(data.telefono);
+  const telefono = cod(data.telefono);
   const parámetros =
     new URLSearchParams();
   parámetros.append("id", doc.id);
