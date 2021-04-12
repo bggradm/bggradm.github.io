@@ -35,13 +35,13 @@ class MiNav extends HTMLElement {
       const roles =
         await cargaRoles(
           usu.email);
-     if (roles.has("Cliente")) {
+      if (roles.has("Cliente")) {
         html += /* html */
           `<li>
             <a href=
               "chat.html">Chat</a>
           </li>`;
-      }
+      } 
       if (roles.has(
         "Administrador")) {
         html += /* html */

@@ -22,6 +22,9 @@ export async function
     // @ts-ignore
     new firebase.auth.
       GoogleAuthProvider();
+  /* Configura el proveedor de
+   * Google para que permita
+   * seleccionar de una lista. */
   provider.setCustomParameters(
     { prompt: "select_account" });
   await getAuth().
